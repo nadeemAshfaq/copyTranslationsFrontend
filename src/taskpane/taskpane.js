@@ -17,7 +17,7 @@ var result = "";
 ///////////////////get api key//////////////////
 async function fetchApiKey() {
   try {
-    const response = await fetch("http://localhost:4000/api/openaikey/openaiKey");
+    const response = await fetch("https://copy-translation-backend.vercel.app/api/openaikey/openaiKey");
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
