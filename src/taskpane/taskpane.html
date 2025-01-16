@@ -46,21 +46,21 @@
         <input
           type="text"
           id="chatPrompt"
-          class="w-full h-[40px] border border-gray-300 p-2 rounded resize-none"
+          class="w-full h-[40px] border border-gray-300 p-2 rounded"
           disabled
         />
       </div>
-      <div class="flex flex-row">
-        <input type="checkbox" id="editCheckbox" class="right-2" />
-        <label for="editCheckbox" class="ml-1">Edit</label>
+      <div class="flex flex-row items-center mt-2">
+        <input type="checkbox" id="editCheckbox" class="cursor-pointer" />
+        <label for="editCheckbox" class="ml-1 cursor-pointer">Edit</label>
       </div>
-    </div> 
+    </div>
 
     <div>
 
     <div class="bg-white shadow-md rounded-lg p-2">
       <div>
-        <h6 class="text-lg font-semibold">Response:</h6>
+        <!-- <h6 class="text-lg font-semibold">Response:</h6> -->
         <textarea
           id="chatGPTResponse"
           class="w-full h-[150px] border border-gray-300 p-2 rounded overflow-hidden"
@@ -98,7 +98,7 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-  
+  <!-- <button onclick="fetchAnthropicMessage()">call claude</button> -->
 
     <script src="taskpane.js"></script>
   </body>
