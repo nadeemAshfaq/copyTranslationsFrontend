@@ -47,7 +47,6 @@ function getSelectedText() {
 
     return context.sync().then(() => {
       const text = selection.text;
-      console.log("Selected text:", text);
 
       if (text) {
         return text;
@@ -71,7 +70,6 @@ function replaceSelectedText() {
     return context.sync().then(() => {
       if (selection.text) {
         selection.insertText(result, Word.InsertLocation.replace);
-        console.log("Replaced selected text with:", result);
       } else {
         console.log("No text selected, nothing to replace.");
       }
@@ -118,7 +116,7 @@ async function fetchAnthropicMessage() {
     document.getElementById("chatGPTResponse").value = result;
     toggleLoading(false);
     // Replacing selected text after getting GPT result
-    console.log("Full response content:", result);
+    console.log("latest code with claude ai");
   } catch (error) {
     console.error("Error fetching message from backend:", error);
   }
